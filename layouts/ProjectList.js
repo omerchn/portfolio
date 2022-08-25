@@ -13,7 +13,7 @@ export default function ProjectList({ projects }) {
         <Project
           key={project.id}
           projectData={project}
-          clickable
+          isClickable
         />
       ))}      
     </ProjectListStyled>

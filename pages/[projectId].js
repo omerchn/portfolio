@@ -6,7 +6,6 @@ import projects from 'public/projects.json'
 // components
 import Project from 'components/Project'
 
-// ssg
 export const getStaticPaths = () => {
   return {
     paths: projects.map(project => ({ params: { projectId: project.id }})),

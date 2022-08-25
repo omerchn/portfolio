@@ -1,13 +1,23 @@
 import Head from 'next/head'
+import styled from 'styled-components'
 
 // data
 import projects from 'public/projects.json'
 
-// components
-import ProjectList from 'components/ProjectList'
-import Header from 'components/Header'
+// layouts
+import ProjectList from 'layouts/ProjectList'
 
-// ssg
+// components
+import Header from 'components/Header'
+import Skills from 'components/Skills'
+
+// styles
+const MainStyled = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
 export const getStaticProps = () => {
   return {
     props: { projects }
@@ -19,8 +29,11 @@ export default function Main({ projects }) {
     <Head>
       <title>Portfolio</title>
     </Head>
-    
-    <Header />
-    <ProjectList projects={projects} />
+
+    <MainStyled>
+      <Header />
+      <Skills />
+      <ProjectList projects={projects} />
+    </MainStyled>
   </>
 }
