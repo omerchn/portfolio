@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 // data
-import projects from 'public/projects.json'
+import projects from 'data/projects.json'
 
 // components
 import Project from 'components/Project'

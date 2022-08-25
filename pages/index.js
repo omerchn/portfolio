@@ -2,38 +2,40 @@ import Head from 'next/head'
 import styled from 'styled-components'
 
 // data
-import projects from 'public/projects.json'
+import projects from 'data/projects.json'
 
 // layouts
-import ProjectList from 'layouts/ProjectList'
-
-// components
-import Header from 'components/Header'
-import Skills from 'components/Skills'
+import Bio from 'layouts/Bio'
+import Overview from 'layouts/Overview'
+import Skills from 'layouts/Skills'
+import ProjectsList from 'layouts/ProjectsList'
 
 // styles
 const MainStyled = styled.div`
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  > hr {
+    border: 0;
+  }
 `
 
-export const getStaticProps = () => {
-  return {
-    props: { projects }
-  }
-}
-
-export default function Main({ projects }) {
+export default function Main() {
   return <>
     <Head>
       <title>Portfolio</title>
     </Head>
 
     <MainStyled>
-      <Header />
+      <Bio />
+      <hr />
+      <Overview />
+      <hr />
       <Skills />
-      <ProjectList projects={projects} />
+      <hr />
+      {/* <ProjectsList projects={projects} /> */}
     </MainStyled>
   </>
 }

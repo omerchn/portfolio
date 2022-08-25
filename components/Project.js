@@ -5,14 +5,27 @@ import styled from 'styled-components'
 // styles
 const ProjectStyled = styled.div`
 
-  button {
-    > h2 {
-      font-weight: normal;
-      margin-bottom: 0;
+  .title {
+    --icon-opacity: .1;
+    --icon-x: .1em;
+
+    &:hover {
+      --icon-opacity: 1;
+      --icon-x: .2em;
     }
-    > div {
+
+    > h2 {
+      margin: 0;
+    }
+    > a {
       display: flex;
-      align-items: center;
+
+      img {
+        margin-top: .05em !important;
+        opacity: var(--icon-opacity);
+        transform: translateX(var(--icon-x));
+        transition: .1s;
+      }
     }
   }
 `
@@ -32,15 +45,15 @@ export default function Project({
 
   return (
     <ProjectStyled>
-      <button onClick={handleClick}>
+      <button onClick={handleClick} className="title">
         <h2>
           {name}
         </h2>
         {isClickable && (
-          <div>
+          <a>
             <span>project page</span>
-            <Image src="/ArrowRight.svg" alt="right arrow" height="20" width="20" />
-          </div>
+            <Image src="/East.svg" alt="right arrow" height="20" width="20" />
+          </a>
         )}
       </button>
     </ProjectStyled>

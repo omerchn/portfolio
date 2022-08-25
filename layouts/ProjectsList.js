@@ -2,13 +2,13 @@ import styled from 'styled-components'
 import Project from 'components/Project'
 
 // styles
-const ProjectListStyled = styled.div`
+const ProjectsListStyled = styled.div`
   
 `
 
-export default function ProjectList({ projects }) {
+export default function ProjectsList({ projects }) {
   return (
-    <ProjectListStyled>
+    <ProjectsListStyled>
       {projects.map(project => (
         <Project
           key={project.id}
@@ -16,6 +16,6 @@ export default function ProjectList({ projects }) {
           isClickable
         />
       ))}      
-    </ProjectListStyled>
+    </ProjectsListStyled>
   )
 }

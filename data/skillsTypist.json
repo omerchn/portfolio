@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Frontend UIs",
+    "color": "#8FBDD3"
+  },
+  {
+    "id": 2,
+    "name": "Web Applications",
+    "color": "#CAB8FF"
+  },
+  {
+    "id": 3,
+    "name": "Serverside APIs",
+    "color": "#FFB2A6"
+  },
+  {
+    "id": 4,
+    "name": "Databases",
+    "color": "#90C8AC"
+  }
+]
