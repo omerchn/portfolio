@@ -13,10 +13,6 @@ const MainStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  > hr {
-    border: 0;
-  }
 `
 
 export default function Main() {
@@ -27,11 +23,8 @@ export default function Main() {
 
     <MainStyled>
       <Bio />
-      <hr />
       <Overview />
-      <hr />
       <Skills />
-      <hr />
       {/* <Projects /> */}
     </MainStyled>
   </>

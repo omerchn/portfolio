@@ -7,6 +7,13 @@ import Skills from 'data/overview.json'
 
 // styles
 const OverviewStyled = styled.div`
+  margin: 1em 0;
+  overflow: hidden;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @keyframes cursor-blink {
     0% { opacity: 0 }
     50% { opacity: 1 }
@@ -15,8 +22,10 @@ const OverviewStyled = styled.div`
 
   .typist {
     margin: 0;
-    display: flex;
-    justify-content: center;
+    min-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    align-self: flex-end;
     font-size: 2.5em;
   }
 
@@ -31,7 +40,7 @@ export default function Overview() {
       <h2 className="q">what does that mean? <br />
         well:
       </h2>
-      <h1 className="typist">I build &nbsp;
+      <h1 className="typist">I make &nbsp;
         <Typist
           loop
           typingDelay={125}
