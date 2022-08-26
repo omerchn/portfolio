@@ -1,14 +1,11 @@
 import Head from 'next/head'
 import styled from 'styled-components'
 
-// data
-import projects from 'data/projects.json'
-
 // layouts
 import Bio from 'layouts/Bio'
 import Overview from 'layouts/Overview'
 import Skills from 'layouts/Skills'
-import ProjectsList from 'layouts/ProjectsList'
+import Projects from 'layouts/Projects'
 
 // styles
 const MainStyled = styled.div`
@@ -35,7 +32,7 @@ export default function Main() {
       <hr />
       <Skills />
       <hr />
-      {/* <ProjectsList projects={projects} /> */}
+      {/* <Projects /> */}
     </MainStyled>
   </>
 }

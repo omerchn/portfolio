@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Typist from 'react-typist-component'
 
 // data
-import Skills from 'data/SkillsTypist.json'
+import Skills from 'data/overview.json'
 
 // styles
 const OverviewStyled = styled.div`
