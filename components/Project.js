@@ -7,11 +7,11 @@ const ProjectStyled = styled.div`
 
   .title {
     --icon-opacity: .1;
-    --icon-x: .1em;
+    --icon-x: 0em;
 
     &:hover {
       --icon-opacity: 1;
-      --icon-x: .2em;
+      --icon-x: .1em;
     }
 
     > h2 {
@@ -52,7 +52,7 @@ export default function Project({
         {isClickable && (
           <a>
             <span>project page</span>
-            <Image src="/East.svg" alt="right arrow" height="20" width="20" />
+            <Image src="/images/east.svg" alt="right arrow" height="20" width="20" />
           </a>
         )}
       </button>

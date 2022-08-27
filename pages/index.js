@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 // layouts
 import Bio from 'layouts/Bio'
-import Overview from 'layouts/Overview'
 import Skills from 'layouts/Skills'
+import Tools from 'layouts/Tools'
 import Projects from 'layouts/Projects'
 
 // styles
@@ -23,9 +23,9 @@ export default function Main() {
 
     <MainStyled>
       <Bio />
-      <Overview />
       <Skills />
-      {/* <Projects /> */}
+      <Tools />
+      <Projects />
     </MainStyled>
   </>
 }

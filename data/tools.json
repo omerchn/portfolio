@@ -1,0 +1,77 @@
+[
+  {
+    "name": "React",
+    "imageSrc": "/images/react-icon.svg",
+    "link": "https://reactjs.org/"
+  },
+  {
+    "name": "Node.js",
+    "imageSrc": "/images/node-icon.svg",
+    "link": "https://nodejs.org/"
+  },
+  {
+    "name": "Express",
+    "imageSrc": "/images/express-icon.svg",
+    "link": "https://expressjs.com/"
+  },
+  {
+    "name": "MongoDB",
+    "imageSrc": "/images/mongo-icon.svg",
+    "link": "https://www.mongodb.com/"
+  },
+  {
+    "name": "Docker",
+    "imageSrc": "/images/docker-icon.svg",
+    "link": "https://www.docker.com/"
+  },
+  {
+    "name": "Next.js",
+    "imageSrc": "/images/next-icon.svg",
+    "link": "https://nextjs.org/"
+  },
+  {
+    "name": "Git",
+    "imageSrc": "/images/git-icon.svg",
+    "link": "https://git-scm.com/"
+  },
+  {
+    "name": "GitLab",
+    "imageSrc": "/images/gitlab-icon.svg",
+    "link": "https://about.gitlab.com/"
+  },
+  {
+    "name": "Kubernetes",
+    "imageSrc": "/images/kubernetes-icon.svg",
+    "link": "https://kubernetes.io/"
+  },
+  {
+    "name": "Vue.js",
+    "imageSrc": "/images/vue-icon.svg",
+    "link": "https://vuejs.org/"
+  },
+  {
+    "name": "Sass",
+    "imageSrc": "/images/sass-icon.svg",
+    "link": "https://sass-lang.com/"
+  },
+  {
+    "name": "Javascript",
+    "imageSrc": "/images/javascript-icon.svg",
+    "link": "https://en.wikipedia.org/wiki/JavaScript"
+  },
+  {
+    "name": "Typescript",
+    "imageSrc": "/images/typescript-icon.svg",
+    "link": "https://www.typescriptlang.org/"
+  },
+  {
+    "name": "CSS",
+    "imageSrc": "/images/css-icon.svg",
+    "link": "https://en.wikipedia.org/wiki/CSS"
+  },
+  {
+    "name": "HTML",
+    "imageSrc": "/images/html-icon.svg",
+    "link": "https://en.wikipedia.org/wiki/HTML"
+  }
+]

@@ -1,12 +1,12 @@
 @font-face {
   font-family: Lato;
-  src: url(/Lato-Light.ttf);
+  src: url(/fonts/Lato-Light.ttf);
 }
 
 @font-face {
   font-family: Lato;
   font-style: italic;
-  src: url(/Lato-LightItalic.ttf);
+  src: url(/fonts/Lato-LightItalic.ttf);
 }
 
 * {
