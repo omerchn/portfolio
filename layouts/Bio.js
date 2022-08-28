@@ -16,7 +16,7 @@ const BioStyled = styled.div`
       margin: 0 .5em;
       filter: grayscale(1);
       
-      &:hover {
+      &:hover, &:focus {
         filter: grayscale(0);
       }
     }

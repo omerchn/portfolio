@@ -55,14 +55,14 @@
     "link": "https://sass-lang.com/"
   },
   {
-    "name": "Javascript",
-    "imageSrc": "/images/javascript-icon.svg",
-    "link": "https://en.wikipedia.org/wiki/JavaScript"
-  },
-  {
     "name": "Typescript",
     "imageSrc": "/images/typescript-icon.svg",
     "link": "https://www.typescriptlang.org/"
+  },
+  {
+    "name": "Javascript",
+    "imageSrc": "/images/javascript-icon.svg",
+    "link": "https://en.wikipedia.org/wiki/JavaScript"
   },
   {
     "name": "CSS",

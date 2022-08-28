@@ -7,9 +7,9 @@ const SkillStyled = styled.a`
   margin: .5em;
 `
 
-export default function Skill({ name, imageSrc, link, isActive }) {
+export default function Skill({ name, imageSrc, link }) {
   return (
-    <SkillStyled className="skill" target="__blank" href={link} title={name}>
+    <SkillStyled target="__blank" href={link} data-tooltip={name}>
       <Image src={imageSrc} height="30" width="30" alt={name}  />
     </SkillStyled>
   )

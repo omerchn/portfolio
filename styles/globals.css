@@ -49,3 +49,33 @@ button {
 .q {
   color: #c2c2c2;
 }
+
+[data-tooltip] {
+  position: relative;
+  overflow: visible !important;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  top: 100%;
+  transform: translate(-50%, 40%);
+  pointer-events: none;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  padding: .2em .5em;
+  border-radius: .5em;
+  background: #333;
+  color: #fff;
+  border: 1px solid #999;
+  transition: opacity .2s, transform .2s;
+}
+
+[data-tooltip]:hover {
+  z-index: 1;
+}
+
+[data-tooltip]:hover::after, [data-tooltip]:focus::after {
+  transform: translate(-50%, 20%);
+  opacity: 1;
+}
