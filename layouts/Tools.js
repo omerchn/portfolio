@@ -28,9 +28,8 @@ export default function Tools() {
         {tools.map(tool => (
           <Tool
             key={tool.name}
-            name={tool.name}
-            imageSrc={tool.imageSrc}
-            link={tool.link}
+            toolData={tool}
+            withTooltip
           />
         ))}
       </div>

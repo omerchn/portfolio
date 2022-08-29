@@ -2,10 +2,13 @@ import Image from 'next/image'
 import styled from 'styled-components'
 
 // styles
-const SkillStyled = styled.div`
+const ToolStyled = styled.div`
   position: relative;
   overflow: visible;
   margin: .5em;
+  
+  width: ${props => props.size || 'unset'};
+  height: ${props => props.size || 'unset'}; 
 
   .tooltip {
     display: flex;
@@ -28,8 +31,8 @@ const SkillStyled = styled.div`
     
     > span {
       margin-left: .2em !important;
-      width: 1em !important;
-      height: 1em !important;
+      width: ${props => props.size || '1em'} !important;
+      height: ${props => props.size || '1em'} !important;
     }
   }
 
@@ -43,14 +46,19 @@ const SkillStyled = styled.div`
   }
 `
 
-export default function Skill({ name, imageSrc, link }) {
+export default function Tool({ toolData, size, withTooltip }) {
+
+  const { name, imageSrc, link } = toolData
+
   return (
-    <SkillStyled>
-      <Image src={imageSrc} height="30" width="30" alt={name}  />
-      <a className="tooltip" target="__blank" href={link}>
-        {name}
-        <Image src="/images/open-in-new.svg" height="15" width="15" alt={name}  />
-      </a>
-    </SkillStyled>
+    <ToolStyled size={size} title={!withTooltip ? name : ''}>
+      <Image src={imageSrc} height="30" width="30" alt={name} />
+      {withTooltip && (
+        <a className="tooltip" target="__blank" href={link}>
+          {name}
+          <Image src="/images/open-in-new.svg" height="16" width="16" alt={name}  />
+        </a>
+      )}
+    </ToolStyled>
   )
 }

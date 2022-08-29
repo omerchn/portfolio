@@ -1,6 +1,17 @@
 [
   {
     "id": "lesson-management",
-    "name": "Lesson Management"
+    "name": "Lesson Management system",
+    "tools": ["React", "Node.js", "Express", "MongoDB", "Docker"]
+  },
+  {
+    "id": "soldiers-test",
+    "name": "the Soldier's Test site",
+    "tools": ["Vue.js", "Firebase"]
+  },
+  {
+    "id": "task-manager",
+    "name": "Graphon.net",
+    "tools": ["Vue.js"]
   }
 ]

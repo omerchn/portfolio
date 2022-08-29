@@ -25,6 +25,21 @@
     "link": "https://www.docker.com/"
   },
   {
+    "name": "Vue.js",
+    "imageSrc": "/images/vue-icon.svg",
+    "link": "https://vuejs.org/"
+  },
+  {
+    "name": "Firebase",
+    "imageSrc": "/images/firebase-icon.svg",
+    "link": "https://firebase.google.com/"
+  },
+  {
+    "name": "Sass",
+    "imageSrc": "/images/sass-icon.svg",
+    "link": "https://sass-lang.com/"
+  },
+  {
     "name": "Next.js",
     "imageSrc": "/images/next-icon.svg",
     "link": "https://nextjs.org/"
@@ -45,33 +60,23 @@
     "link": "https://kubernetes.io/"
   },
   {
-    "name": "Vue.js",
-    "imageSrc": "/images/vue-icon.svg",
-    "link": "https://vuejs.org/"
-  },
-  {
-    "name": "Sass",
-    "imageSrc": "/images/sass-icon.svg",
-    "link": "https://sass-lang.com/"
-  },
-  {
-    "name": "Typescript",
+    "name": "TypeScript",
     "imageSrc": "/images/typescript-icon.svg",
     "link": "https://www.typescriptlang.org/"
   },
   {
-    "name": "Javascript",
+    "name": "JavaScript",
     "imageSrc": "/images/javascript-icon.svg",
-    "link": "https://en.wikipedia.org/wiki/JavaScript"
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
   },
   {
     "name": "CSS",
     "imageSrc": "/images/css-icon.svg",
-    "link": "https://en.wikipedia.org/wiki/CSS"
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
   },
   {
     "name": "HTML",
     "imageSrc": "/images/html-icon.svg",
-    "link": "https://en.wikipedia.org/wiki/HTML"
+    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
   }
 ]
