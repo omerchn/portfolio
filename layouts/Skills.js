@@ -40,9 +40,9 @@ export default function Skills() {
   return (
     <SkillsStyled>
       <h2 className="q">what does that mean? <br />
-        well:
+        well, I build:
       </h2>
-      <h1 className="typist">I make &nbsp;
+      <h1 className="typist">
         <Typist
           loop
           typingDelay={125}

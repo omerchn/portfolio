@@ -1,4 +1,7 @@
 import styled from 'styled-components'
+import { Fade } from 'react-awesome-reveal'
+
+// components
 import Project from 'components/Project'
 
 // data
@@ -15,13 +18,20 @@ export default function Projects() {
       <h2 className="q">Examples?<br />
         Sure!
       </h2>
-      {projects.map(project => (
-        <Project
-          key={project.id}
-          projectData={project}
-          isClickable
-        />
-      ))}      
+      <Fade
+        className='fade'
+        duration={1000}
+        cascade
+        damping={.1}
+      >
+        {projects.map(project => (
+          <Project
+            key={project.id}
+            projectData={project}
+            isClickable
+          />
+        ))}    
+      </Fade>  
     </ProjectsStyled>
   )
 }

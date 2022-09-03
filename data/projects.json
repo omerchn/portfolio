@@ -10,7 +10,7 @@
     "tools": ["Vue.js", "Firebase"]
   },
   {
-    "id": "task-manager",
+    "id": "graphonet",
     "name": "Graphon.net",
     "tools": ["Vue.js"]
   }

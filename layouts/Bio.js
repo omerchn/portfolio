@@ -3,9 +3,8 @@ import styled from 'styled-components'
 
 // styles
 const BioStyled = styled.div`
-  width: 100vw;
-  padding: 0 1em;
-  padding-top: 1em;
+  width: 100%;
+  padding: 1em;
   background: #f9f9fb;
 
   .socials {
@@ -47,7 +46,7 @@ export default function Bio() {
     <BioStyled>
       <div className="socials">
         <a target="__blank" href="https://www.linkedin.com/in/omercohen990/">
-          <Image src="/images/linkedin.svg" alt="linkedin" height="25" width="25" />
+          <Image priority src="/images/linkedin.svg" alt="linkedin" height="25" width="25" />
         </a>
       </div>
       <h1 className="name">my name is Omer Cohen.</h1>

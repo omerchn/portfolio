@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Fade } from 'react-awesome-reveal'
 
 // data
 import tools from 'data/tools.json' 
@@ -15,7 +16,12 @@ const ToolsStyled = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
+    >:hover {
+      z-index: 1;
+    }
   }
+
 `
 
 export default function Tools() {
@@ -25,6 +31,13 @@ export default function Tools() {
         With these great open source tools.
       </h2>
       <div className="tools">
+      <Fade
+        direction='up'
+        delay={200}
+        duration={1000}
+        cascade
+        damping={.1}
+      >
         {tools.map(tool => (
           <Tool
             key={tool.name}
@@ -32,6 +45,7 @@ export default function Tools() {
             withTooltip
           />
         ))}
+      </Fade>
       </div>
     </ToolsStyled>
   )

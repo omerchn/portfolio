@@ -6,15 +6,28 @@ const ToolStyled = styled.div`
   position: relative;
   overflow: visible;
   margin: .5em;
+  transition: transform .2s;
   
   width: ${props => props.size || 'unset'};
   height: ${props => props.size || 'unset'}; 
+  
+  &:hover, &:focus {
+    z-index: 1;
+    transform: scale(1.1);
+
+    .tooltip {
+      pointer-events: inherit;
+      transform: translate(-50%);
+      opacity: 1;
+    }
+  }
 
   .tooltip {
+    pointer-events: none;
     display: flex;
     align-items: center;
     top: 100%;
-    transform: translate(-50%, 40%);
+    transform: translate(-50%);
     opacity: 0;
     position: absolute;
     left: 50%;
@@ -23,7 +36,7 @@ const ToolStyled = styled.div`
     background: #333;
     color: #fff;
     border: 1px solid #999;
-    transition: opacity .2s, transform .2s;
+    transition: opacity .2s;
 
     &:hover {
       text-decoration: underline;
@@ -33,15 +46,6 @@ const ToolStyled = styled.div`
       margin-left: .2em !important;
       width: ${props => props.size || '1em'} !important;
       height: ${props => props.size || '1em'} !important;
-    }
-  }
-
-  &:hover, &:focus {
-    z-index: 1;
-
-    .tooltip {
-      transform: translate(-50%, 20%);
-      opacity: 1;
     }
   }
 `
