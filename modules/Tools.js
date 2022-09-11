@@ -32,6 +32,7 @@ export default function Tools() {
       </h2>
       <div className="tools">
       <Fade
+        triggerOnce
         direction='up'
         delay={200}
         duration={1000}

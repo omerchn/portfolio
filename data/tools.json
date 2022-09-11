@@ -1,82 +1,82 @@
 [
   {
     "name": "React",
-    "imageSrc": "/images/react-icon.svg",
+    "imageSrc": "/images/icons/react-icon.svg",
     "link": "https://reactjs.org/"
   },
   {
     "name": "Node.js",
-    "imageSrc": "/images/node-icon.svg",
+    "imageSrc": "/images/icons/node-icon.svg",
     "link": "https://nodejs.org/"
   },
   {
     "name": "Express",
-    "imageSrc": "/images/express-icon.svg",
+    "imageSrc": "/images/icons/express-icon.svg",
     "link": "https://expressjs.com/"
   },
   {
     "name": "MongoDB",
-    "imageSrc": "/images/mongo-icon.svg",
+    "imageSrc": "/images/icons/mongo-icon.svg",
     "link": "https://www.mongodb.com/"
   },
   {
     "name": "Docker",
-    "imageSrc": "/images/docker-icon.svg",
+    "imageSrc": "/images/icons/docker-icon.svg",
     "link": "https://www.docker.com/"
   },
   {
     "name": "Vue.js",
-    "imageSrc": "/images/vue-icon.svg",
+    "imageSrc": "/images/icons/vue-icon.svg",
     "link": "https://vuejs.org/"
   },
   {
     "name": "Firebase",
-    "imageSrc": "/images/firebase-icon.svg",
+    "imageSrc": "/images/icons/firebase-icon.svg",
     "link": "https://firebase.google.com/"
   },
   {
     "name": "Sass",
-    "imageSrc": "/images/sass-icon.svg",
+    "imageSrc": "/images/icons/sass-icon.svg",
     "link": "https://sass-lang.com/"
   },
   {
     "name": "Next.js",
-    "imageSrc": "/images/next-icon.svg",
+    "imageSrc": "/images/icons/next-icon.svg",
     "link": "https://nextjs.org/"
   },
   {
     "name": "Git",
-    "imageSrc": "/images/git-icon.svg",
+    "imageSrc": "/images/icons/git-icon.svg",
     "link": "https://git-scm.com/"
   },
   {
     "name": "GitLab",
-    "imageSrc": "/images/gitlab-icon.svg",
+    "imageSrc": "/images/icons/gitlab-icon.svg",
     "link": "https://about.gitlab.com/"
   },
   {
     "name": "Kubernetes",
-    "imageSrc": "/images/kubernetes-icon.svg",
+    "imageSrc": "/images/icons/kubernetes-icon.svg",
     "link": "https://kubernetes.io/"
   },
   {
     "name": "TypeScript",
-    "imageSrc": "/images/typescript-icon.svg",
+    "imageSrc": "/images/icons/typescript-icon.svg",
     "link": "https://www.typescriptlang.org/"
   },
   {
     "name": "JavaScript",
-    "imageSrc": "/images/javascript-icon.svg",
+    "imageSrc": "/images/icons/javascript-icon.svg",
     "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
   },
   {
     "name": "CSS",
-    "imageSrc": "/images/css-icon.svg",
+    "imageSrc": "/images/icons/css-icon.svg",
     "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
   },
   {
     "name": "HTML",
-    "imageSrc": "/images/html-icon.svg",
+    "imageSrc": "/images/icons/html-icon.svg",
     "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
   }
 ]

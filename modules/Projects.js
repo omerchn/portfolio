@@ -20,7 +20,6 @@ export default function Projects() {
       </h2>
       <Fade
         className='fade'
-        duration={1000}
         cascade
         damping={.1}
       >

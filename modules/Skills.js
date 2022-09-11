@@ -40,7 +40,7 @@ export default function Skills() {
   return (
     <SkillsStyled>
       <h2 className="q">what does that mean? <br />
-        well, I build:
+        well, I make:
       </h2>
       <h1 className="typist">
         <Typist

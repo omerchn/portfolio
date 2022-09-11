@@ -2,11 +2,11 @@ import Head from 'next/head'
 import styled from 'styled-components'
 import { Fade } from "react-awesome-reveal"
 
-// layouts
-import Bio from 'layouts/Bio'
-import Skills from 'layouts/Skills'
-import Tools from 'layouts/Tools'
-import Projects from 'layouts/Projects'
+// modules
+import Bio from 'modules/Bio'
+import Skills from 'modules/Skills'
+import Tools from 'modules/Tools'
+import Projects from 'modules/Projects'
 
 // styles
 const MainStyled = styled.div`
@@ -40,7 +40,11 @@ export default function Main() {
     </Head>
 
     <MainStyled>
-      <Fade triggerOnce duration={500} cascade damping={.2}>
+      <Fade
+        triggerOnce
+        cascade
+        damping={.2}
+      >
         <Bio />
         <Skills />
         <hr />

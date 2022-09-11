@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { Fade } from 'react-awesome-reveal'
 
 // data
 import projects from 'data/projects.json'
@@ -25,7 +26,9 @@ export default function ProjectPage({ projectData }) {
     <Head>
       <title>{`Project - ${projectData.name}`}</title>
     </Head>
-
-    <Project projectData={projectData} />
+    
+    <Fade>
+      <Project projectData={projectData} />
+    </Fade>
   </>
 }

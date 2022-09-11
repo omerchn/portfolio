@@ -11,7 +11,7 @@ const ToolStyled = styled.div`
   width: ${props => props.size || 'unset'};
   height: ${props => props.size || 'unset'}; 
   
-  &:hover, &:focus {
+  &:hover, &:focus-within {
     z-index: 1;
     transform: scale(1.1);
 
@@ -60,7 +60,7 @@ export default function Tool({ toolData, size, withTooltip }) {
       {withTooltip && (
         <a className="tooltip" target="__blank" href={link}>
           {name}
-          <Image src="/images/open-in-new.svg" height="16" width="16" alt={name}  />
+          <Image src="/images/general/open-in-new.svg" height="16" width="16" alt={name}  />
         </a>
       )}
     </ToolStyled>

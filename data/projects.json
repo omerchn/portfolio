@@ -2,16 +2,96 @@
   {
     "id": "lesson-management",
     "name": "Lesson Management system",
-    "tools": ["React", "Node.js", "Express", "MongoDB", "Docker"]
+    "tools": ["React", "Node.js", "Express", "MongoDB", "Docker"],
+    "tasks": [
+      {
+        "text": "Built a full management system from the groud up",
+        "icon": "✔️"
+      },
+      {
+        "text": "Was responsible for the whole stack - UI, Server, Database",
+        "icon": "✔️"
+      },
+      {
+        "text": "Built an authentication and authorization system from scratch",
+        "icon": "✔️"
+      },
+      {
+        "text": "Built full role-based CRUD operations",
+        "icon": "✔️"
+      },
+      {
+        "text": "Created a fully-featured on-standards REST API with auth security",
+        "icon": "✔️"
+      },
+      {
+        "text": "Structured the MongoDB database",
+        "icon": "✔️"
+      },
+      {
+        "text": "Was responsible for the deployment to the army cloud using Docker",
+        "icon": "✔️"
+      },
+      {
+        "text": "The site has won an award for Innovation!",
+        "icon": "🏆"
+      }
+    ],
+    "images": [
+      "/images/projects/lm-1.png",
+      "/images/projects/lm-2.png"
+    ]
   },
   {
     "id": "soldiers-test",
-    "name": "the Soldier's Test site",
-    "tools": ["Vue.js", "Firebase"]
+    "name": "The Soldier's Test site",
+    "tools": ["Vue.js", "Firebase"],
+    "tasks": [
+      {
+        "text": "Built a user-friendly UI for learning for the soldier's test",
+        "icon": "✔️"
+      },
+      {
+        "text": "Structrured the Firebase Firestore database",
+        "icon": "✔️"
+      },
+      {
+        "text": "Added admin authentication using Firebase Auth",
+        "icon": "✔️"
+      },
+      {
+        "text": "Added full CRUD operations using the Firebase SDK",
+        "icon": "✔️"
+      },
+      {
+        "text": "Added progress saving using Local Storage",
+        "icon": "✔️"
+      }
+    ],
+    "images": []
   },
   {
     "id": "graphonet",
     "name": "Graphon.net",
-    "tools": ["Vue.js"]
+    "tools": ["Vue.js"],
+    "tasks": [
+      {
+        "text": "Built a user-friendly UI for the unit's Task Visualization",
+        "icon": "✔️"
+      },
+      {
+        "text": "Built beautiful Calendar and List Views from scratch",
+        "icon": "✔️"
+      },
+      {
+        "text": "Created the UI from scratch: without UI Libraries",
+        "icon": "✔️"
+      },
+      {
+        "text": "Connected the UI to the unit's task lists using the Sharepoint REST API",
+        "icon": "✔️"
+      }
+    ],
+    "images": []
   }
 ]
