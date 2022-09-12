@@ -93,6 +93,10 @@ const ProjectStyled = styled.div`
 
     .thumb {
       border-radius: .5em;
+      
+      img {
+        border-radius: .25em;
+      }
     }
 
     .control-arrow {
