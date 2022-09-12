@@ -14,7 +14,7 @@ const ToolsStyled = styled.div`
   padding: 1em 2em;
   padding-top: 1px;
   border-radius: 1em;
-  background: #f9f9fb;
+  background: #fafaff;
 
   .tools {
     display: flex;

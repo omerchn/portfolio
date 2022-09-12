@@ -91,6 +91,10 @@ const ProjectStyled = styled.div`
       overflow: hidden;
     }
 
+    .thumbs {
+      width: 0;
+    }
+
     .thumb {
       border-radius: .5em;
       

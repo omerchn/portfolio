@@ -8,7 +8,7 @@ const BioStyled = styled.div`
   margin: 1em;
   padding: 1em 2em;
   border-radius: 1em;
-  background: #f9f9fb;
+  background: #fafaff;
 
 
   .socials {
@@ -18,6 +18,7 @@ const BioStyled = styled.div`
       cursor: pointer;
       margin: 0 .5em;
       filter: grayscale(1);
+      transition: filter .2s;
       
       &:hover, &:focus {
         filter: grayscale(0);
@@ -41,7 +42,7 @@ const BioStyled = styled.div`
   .job {
     width: fit-content;
     margin: auto;
-    color: #666;
+    color: #888;
   }
 `
 
@@ -53,7 +54,7 @@ export default function Bio() {
           <Image priority src="/images/general/linkedin.svg" alt="linkedin" height="25" width="25" />
         </a>
       </div>
-      <h1 className="name">my name is Omer Cohen.</h1>
+      <h1 className="name">My Name is Omer Cohen.</h1>
       <div className="me-img"><Image priority src="/images/general/me.png" alt="me" height="100" width="100" /></div>
       <div className="job"><h1>I&apos;m a Fullstack Web Developer.</h1></div>
     </BioStyled>

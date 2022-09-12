@@ -38,8 +38,10 @@
       }
     ],
     "images": [
-      "/images/projects/lm-1.png",
-      "/images/projects/lm-2.png"
+      "/images/projects/lm-1.jpg",
+      "/images/projects/lm-2.jpg",
+      "/images/projects/lm-3.jpg",
+      "/images/projects/lm-4.jpg"
     ]
   },
   {
@@ -48,7 +50,7 @@
     "tools": ["Vue.js", "Firebase"],
     "tasks": [
       {
-        "text": "Built a user-friendly UI for learning for the soldier's test",
+        "text": "Built a user-friendly UI for learning for the Soldier's Test",
         "icon": "✔️"
       },
       {
@@ -68,7 +70,12 @@
         "icon": "✔️"
       }
     ],
-    "images": []
+    "images": [
+      "/images/projects/st-1.jpg",
+      "/images/projects/st-2.jpg",
+      "/images/projects/st-3.jpg",
+      "/images/projects/st-4.jpg"
+    ]
   },
   {
     "id": "graphonet",
