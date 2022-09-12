@@ -28,7 +28,7 @@ const BioStyled = styled.div`
 
   .name {
     font-size: 1.8em;
-    color: #999;
+    color: #888;
   }
 
   .me-img {
