@@ -139,7 +139,7 @@ export default function Project({ projectData, isClickable }) {
         ))}
       </ul>
       
-      <Carousel className="images-carousel" showStatus={false}>
+      <Carousel className="images-carousel" showStatus={false} showIndicators={false}>
           {images.map(image => (
             <div key={image} style={{ width: 'fit-content' }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
