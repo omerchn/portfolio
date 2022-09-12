@@ -82,6 +82,10 @@ const ProjectStyled = styled.div`
       margin-right: .5em;
     }
   }
+
+  .images {
+    max-width: 480px;
+  }
 `
 
 export default function Project({ projectData, isClickable }) {
@@ -115,7 +119,7 @@ export default function Project({ projectData, isClickable }) {
         ))}
       </ul>
       
-      <Carousel width={480}>
+      <Carousel className="images">
           {images.map(image => (
             <div key={image} style={{ width: 'fit-content' }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
