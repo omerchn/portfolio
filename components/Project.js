@@ -91,6 +91,10 @@ const ProjectStyled = styled.div`
       overflow: hidden;
     }
 
+    .thumb {
+      border-radius: .5em;
+    }
+
     .control-arrow {
       background: rgba(0,0,0,0.1);
       height: 1.5em;
