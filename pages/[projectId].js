@@ -27,7 +27,11 @@ export default function ProjectPage({ projectData }) {
       <title>{`Project - ${projectData.name}`}</title>
     </Head>
     
-    <Fade>
+    <Fade style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center'
+    }}>
       <Project projectData={projectData} />
     </Fade>
   </>

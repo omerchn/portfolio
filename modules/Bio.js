@@ -42,7 +42,7 @@ const BioStyled = styled.div`
   .job {
     width: fit-content;
     margin: auto;
-    color: #888;
+    color: #666;
   }
 `
 

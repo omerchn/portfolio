@@ -85,33 +85,55 @@ const ProjectStyled = styled.div`
 
   .images-carousel {
     max-width: 480px;
-    
-    .slide {
+
+    .carousel {
+      overflow: visible;
+    }
+
+    .slider-wrapper {
       border-radius: .5em;
-      overflow: hidden;
+      box-shadow: 0 .1em .4em #c7c7db;
     }
 
     .thumbs {
       width: 0;
     }
-
+    
     .thumb {
+      margin: 0 .2em;
+      border: 0;
       border-radius: .5em;
+      transition: box-shadow .2s;
       
+      cursor: pointer;
+      &:hover {
+        box-shadow: 0 .1em .25em #e5e5e6;
+      }
+
+      &.selected {
+        box-shadow: 0 .1em .25em #c7c7db;
+      }
+
       img {
         border-radius: .25em;
       }
     }
 
     .control-arrow {
-      background: rgba(0,0,0,0.1);
+      background: rgba(0,0,0,0.05);
       height: 1.5em;
       width: 1.5em;
-      margin: auto .5em;
+      margin: auto .4em;
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: 50%;
+      
+      &.control-next {
+        border-radius: .1em .5em .5em .1em;
+      }
+      &.control-prev {
+        border-radius: .5em .1em .1em .5em;
+      }
     }
   }
 `
