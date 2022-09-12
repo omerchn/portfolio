@@ -6,18 +6,18 @@ const ToolStyled = styled.div`
   position: relative;
   overflow: visible;
   margin: .5em;
-  transition: transform .2s;
+  transition: transform .2s, filter .2s;
   
   width: ${props => props.size || 'unset'};
   height: ${props => props.size || 'unset'}; 
   
   &:hover, &:focus-within {
     z-index: 1;
-    transform: scale(1.1);
+    filter: brightness(1.1);
 
     .tooltip {
       pointer-events: inherit;
-      transform: translate(-50%);
+      transform: translate(-50%) scale(1);
       opacity: 1;
     }
   }
@@ -27,7 +27,8 @@ const ToolStyled = styled.div`
     display: flex;
     align-items: center;
     top: 100%;
-    transform: translate(-50%);
+    transform: translate(-50%) scale(.8);
+    transform-origin: top;
     opacity: 0;
     position: absolute;
     left: 50%;
@@ -36,7 +37,7 @@ const ToolStyled = styled.div`
     background: #333;
     color: #fff;
     border: 1px solid #999;
-    transition: opacity .2s;
+    transition: opacity .2s, transform .2s;
 
     &:hover {
       text-decoration: underline;

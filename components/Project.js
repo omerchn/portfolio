@@ -16,7 +16,7 @@ const ProjectStyled = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
-  grid-gap: 1em;
+  grid-gap: 1em 2em;
 
   @media screen and (max-width: 700px) {
     grid-template-columns: 1fr;

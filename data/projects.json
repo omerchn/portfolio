@@ -76,7 +76,7 @@
     "tools": ["Vue.js"],
     "tasks": [
       {
-        "text": "Built a user-friendly UI for the unit's Task Visualization",
+        "text": "Built a user-friendly UI for the Unit's Task Visualization",
         "icon": "✔️"
       },
       {
@@ -84,11 +84,11 @@
         "icon": "✔️"
       },
       {
-        "text": "Created the UI from scratch: without UI Libraries",
+        "text": "Created the UI from scratch: no UI Libraries!",
         "icon": "✔️"
       },
       {
-        "text": "Connected the UI to the unit's task lists using the Sharepoint REST API",
+        "text": "Connected the UI to the Unit's Task Lists using Sharepoint REST API",
         "icon": "✔️"
       }
     ],
