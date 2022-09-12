@@ -4,8 +4,12 @@ import styled from 'styled-components'
 // styles
 const BioStyled = styled.div`
   width: 100%;
-  padding: 1em;
+  max-width: 100%;
+  margin: 1em;
+  padding: 1em 2em;
+  border-radius: 1em;
   background: #f9f9fb;
+
 
   .socials {
     margin: 1em 0;

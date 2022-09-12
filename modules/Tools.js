@@ -9,7 +9,12 @@ import Tool from 'components/Tool'
 
 // styles
 const ToolsStyled = styled.div`
-  padding: 1em .5em;
+  width: fit-content;
+  margin: 1em;
+  padding: 1em 2em;
+  padding-top: 1px;
+  border-radius: 1em;
+  background: #f9f9fb;
 
   .tools {
     display: flex;

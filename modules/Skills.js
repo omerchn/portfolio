@@ -7,7 +7,8 @@ import skills from 'data/skills.json'
 
 // styles
 const SkillsStyled = styled.div`
-  padding: 1em;
+  padding: 2em 1em;
+  padding-top: 1px;
   overflow: hidden;
   max-width: 100vw;
   display: flex;

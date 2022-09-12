@@ -18,18 +18,12 @@ const MainStyled = styled.div`
 
   > div {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
   
   > div:last-child {
     width: fit-content;
-  }
-
-  hr {
-    border: 0;
-    width: 10em;
-    height: .25em;
-    margin-top: 2em;
-    background: #f9f9fb;
   }
 `
 
@@ -47,9 +41,7 @@ export default function Main() {
       >
         <Bio />
         <Skills />
-        <hr />
         <Tools />
-        <hr />
         <Projects />
       </Fade>
     </MainStyled>

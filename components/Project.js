@@ -83,8 +83,24 @@ const ProjectStyled = styled.div`
     }
   }
 
-  .images {
+  .images-carousel {
     max-width: 480px;
+    
+    .slide {
+      border-radius: .5em;
+      overflow: hidden;
+    }
+
+    .control-arrow {
+      background: rgba(0,0,0,0.1);
+      height: 1.5em;
+      width: 1.5em;
+      margin: auto .5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
   }
 `
 
@@ -119,7 +135,7 @@ export default function Project({ projectData, isClickable }) {
         ))}
       </ul>
       
-      <Carousel className="images">
+      <Carousel className="images-carousel" showStatus={false}>
           {images.map(image => (
             <div key={image} style={{ width: 'fit-content' }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
