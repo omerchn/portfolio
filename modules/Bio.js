@@ -6,10 +6,10 @@ const BioStyled = styled.div`
   width: 100%;
   max-width: 100%;
   margin: 1em;
+  margin-top: 0;
   padding: 1em 2em;
-  border-radius: 1em;
-  background: #fafaff;
-
+  border-radius: 0 0 1em 1em;
+  background: #f4f4ff;
 
   .socials {
     margin: 1em 0;
@@ -42,7 +42,7 @@ const BioStyled = styled.div`
   .job {
     width: fit-content;
     margin: auto;
-    color: #888;
+    color: #333;
   }
 `
 
@@ -50,7 +50,10 @@ export default function Bio() {
   return (
     <BioStyled>
       <div className="socials">
-        <a target="__blank" href="https://www.linkedin.com/in/omercohen990/">
+        <a target="__blank" href="https://github.com/omercohen990">
+          <Image priority src="/images/general/github.svg" alt="github" height="25" width="25" />
+        </a>
+        <a target="__blank" href="https://www.linkedin.com/in/omercohen990">
           <Image priority src="/images/general/linkedin.svg" alt="linkedin" height="25" width="25" />
         </a>
       </div>
