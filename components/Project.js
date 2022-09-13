@@ -95,6 +95,10 @@ const ProjectStyled = styled.div`
       box-shadow: 0 .1em .4em #c7c7db;
     }
 
+    .thumbs-wrapper {
+      margin: 1em 0;
+    }
+
     .thumbs {
       width: 0;
     }
