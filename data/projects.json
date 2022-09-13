@@ -99,6 +99,11 @@
         "icon": "✔️"
       }
     ],
-    "images": []
+    "images": [
+      "/images/projects/gn-1.jpg",
+      "/images/projects/gn-2.jpg",
+      "/images/projects/gn-3.jpg",
+      "/images/projects/gn-4.jpg"
+    ]
   }
 ]
