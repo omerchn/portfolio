@@ -15,22 +15,16 @@ const ProjectsStyled = styled.div`
 export default function Projects() {
   return (
     <ProjectsStyled>
-      <h2 className="q">Examples?<br />
+      <h2 className="q">
+        Examples?
+        <br />
         Sure!
       </h2>
-      <Fade
-        className='fade'
-        cascade
-        damping={.1}
-      >
-        {projects.map(project => (
-          <Project
-            key={project.id}
-            projectData={project}
-            isClickable
-          />
-        ))}    
-      </Fade>  
+      <Fade className="fade" cascade damping={0.1}>
+        {projects.map((project) => (
+          <Project key={project.id} projectData={project} isClickable />
+        ))}
+      </Fade>
     </ProjectsStyled>
   )
 }
