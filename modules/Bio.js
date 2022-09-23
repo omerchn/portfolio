@@ -6,9 +6,8 @@ const BioStyled = styled.div`
   width: 100%;
   max-width: 100%;
   margin: 1em;
-  margin-top: 0;
   padding: 1em 2em;
-  border-radius: 0 0 1em 1em;
+  border-radius: 1em;
   background: #f4f4ff;
 
   .socials {
