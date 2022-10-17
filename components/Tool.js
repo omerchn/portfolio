@@ -5,13 +5,14 @@ import styled from 'styled-components'
 const ToolStyled = styled.div`
   position: relative;
   overflow: visible;
-  margin: .5em;
-  transition: transform .2s, filter .2s;
-  
-  width: ${props => props.size || 'unset'};
-  height: ${props => props.size || 'unset'}; 
-  
-  &:hover, &:focus-within {
+  margin: 0.5em;
+  transition: transform 0.2s, filter 0.2s;
+
+  width: ${(props) => props.size || 'unset'};
+  height: ${(props) => props.size || 'unset'};
+
+  &:hover,
+  &:focus-within {
     z-index: 1;
     filter: brightness(1.1);
 
@@ -26,33 +27,34 @@ const ToolStyled = styled.div`
     pointer-events: none;
     display: flex;
     align-items: center;
-    top: 100%;
-    transform: translate(-50%) scale(.8);
+    bottom: 100%;
+    transform: translate(-50%) scale(0.8);
     transform-origin: top;
     opacity: 0;
     position: absolute;
     left: 50%;
-    padding: .2em .5em;
-    border-radius: .5em;
-    background: #333;
-    color: #fff;
+    padding: 0.2em 0.5em;
+    border-radius: 0.5em;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
     border: 1px solid #999;
-    transition: opacity .2s, transform .2s;
+    transition: opacity 0.2s, transform 0.2s;
 
     &:hover {
       text-decoration: underline;
     }
-    
+
     > span {
-      margin-left: .2em !important;
-      width: ${props => props.size || '1em'} !important;
-      height: ${props => props.size || '1em'} !important;
+      filter: brightness(0);
+      margin-left: 0.2em !important;
+      width: ${(props) => props.size || '1em'} !important;
+      height: ${(props) => props.size || '1em'} !important;
     }
   }
 `
 
 export default function Tool({ toolData, size, withTooltip }) {
-
   const { name, imageSrc, link } = toolData
 
   return (
@@ -61,7 +63,12 @@ export default function Tool({ toolData, size, withTooltip }) {
       {withTooltip && (
         <a className="tooltip" target="__blank" href={link}>
           {name}
-          <Image src="/images/general/open-in-new.svg" height="16" width="16" alt={name}  />
+          <Image
+            src="/images/general/open-in-new.svg"
+            height="16"
+            width="16"
+            alt={name}
+          />
         </a>
       )}
     </ToolStyled>

@@ -5,10 +5,12 @@ import styled from 'styled-components'
 const BioStyled = styled.div`
   width: 100%;
   max-width: 100%;
-  margin: 1em;
-  padding: 1em 2em;
+  padding: 2em;
   border-radius: 1em;
-  background: #f4f4ff;
+  background-image: url('images/general/waves-background.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   .socials {
     margin: 1em 0;
@@ -16,19 +18,15 @@ const BioStyled = styled.div`
     a {
       cursor: pointer;
       margin: 0 0.5em;
-      filter: grayscale(1);
       transition: filter 0.2s;
 
-      &:hover,
-      &:focus {
-        filter: grayscale(0);
+      &.linkedin {
+        filter: grayscale(1);
+      }
+      &.github {
+        filter: brightness(0) invert(1);
       }
     }
-  }
-
-  .name {
-    font-size: 1.8em;
-    color: #666;
   }
 
   .me-img {
@@ -38,13 +36,17 @@ const BioStyled = styled.div`
     border-radius: 0.5em;
     overflow: hidden;
     margin-top: 2em;
-    box-shadow: -6px 6px 0px #e0e0e8;
+    box-shadow: 0 0 0 6px #ffffff3b;
   }
 
   .job {
     width: fit-content;
-    margin: auto;
-    color: #333;
+    margin: 2em auto;
+    font-style: italic;
+
+    .name {
+      font-size: 1.8em;
+    }
   }
 `
 
@@ -52,7 +54,11 @@ export default function Bio() {
   return (
     <BioStyled>
       <div className="socials">
-        <a target="__blank" href="https://github.com/omercohen990">
+        <a
+          target="__blank"
+          href="https://github.com/omercohen990"
+          className="github"
+        >
           <Image
             priority
             src="/images/general/github.svg"
@@ -61,7 +67,11 @@ export default function Bio() {
             width="25"
           />
         </a>
-        <a target="__blank" href="https://www.linkedin.com/in/omercohen990">
+        <a
+          target="__blank"
+          href="https://www.linkedin.com/in/omercohen990"
+          className="linkedin"
+        >
           <Image
             priority
             src="/images/general/linkedin.svg"

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styled from 'styled-components'
-import { Fade } from "react-awesome-reveal"
+import { Fade } from 'react-awesome-reveal'
 
 // modules
 import Bio from 'modules/Bio'
@@ -21,29 +21,27 @@ const MainStyled = styled.div`
     display: flex;
     justify-content: center;
   }
-  
+
   > div:last-child {
     width: fit-content;
   }
 `
 
 export default function Main() {
-  return <>
-    <Head>
-      <title>Portfolio</title>
-    </Head>
+  return (
+    <>
+      <Head>
+        <title>Portfolio</title>
+      </Head>
 
-    <MainStyled>
-      <Fade
-        triggerOnce
-        cascade
-        damping={.2}
-      >
-        <Bio />
-        <Skills />
-        <Tools />
-        <Projects />
-      </Fade>
-    </MainStyled>
-  </>
+      <MainStyled>
+        <Fade cascade damping={0.2}>
+          <Bio />
+          <Skills />
+          <Tools />
+          <Projects />
+        </Fade>
+      </MainStyled>
+    </>
+  )
 }

@@ -32,24 +32,27 @@ const ProjectStyled = styled.div`
     }
 
     --icon-opacity: 0.1;
-    --icon-x: 0em;
+    --icon-x: 0.1em;
 
     .title-content {
       &:hover,
       &:focus {
         --icon-opacity: 1;
-        --icon-x: 0.1em;
+        --icon-x: 0.2em;
       }
 
       > h2 {
         text-align: start;
         margin: 0;
+        font-style: italic;
       }
 
       > a {
         display: flex;
+        margin-left: 0.1em;
 
         img {
+          filter: brightness(0) invert(1);
           margin-top: 0.05em !important;
           opacity: var(--icon-opacity);
           transform: translateX(var(--icon-x));
@@ -91,7 +94,6 @@ const ProjectStyled = styled.div`
 
     .slider-wrapper {
       border-radius: 0.5em;
-      box-shadow: 0 0.1em 0.4em #c7c7db;
     }
 
     .thumbs-wrapper {
@@ -109,13 +111,13 @@ const ProjectStyled = styled.div`
       border-radius: 0.5em;
       transition: box-shadow 0.2s;
 
-      &:hover,
-      &:focus {
-        box-shadow: 0 0.1em 0.25em #e5e5e6;
+      &:focus,
+      &:hover {
+        box-shadow: 0 0 0 1px #ffffff3b;
       }
 
       &.selected {
-        box-shadow: 0 0.1em 0.25em #c7c7db;
+        box-shadow: 0 0 0 3px #ffffff3b;
       }
 
       img {
