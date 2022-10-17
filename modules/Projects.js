@@ -10,6 +10,10 @@ import projects from 'data/projects.json'
 // styles
 const ProjectsStyled = styled.div`
   padding: 1em;
+
+  .projects {
+    padding: 1em 0;
+  }
 `
 
 export default function Projects() {
@@ -20,7 +24,7 @@ export default function Projects() {
         <br />
         Sure!
       </h2>
-      <Fade className="fade" cascade damping={0.1}>
+      <Fade className="fade projects" cascade damping={0.1}>
         {projects.map((project) => (
           <Project key={project.id} projectData={project} isClickable />
         ))}
