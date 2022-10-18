@@ -14,7 +14,8 @@ const ToolsStyled = styled.div`
   padding: 1em 2em;
   padding-top: 1px;
   border-radius: 1em;
-  background: rgb(255 255 255 / 2%);
+  background: ${(props) =>
+    props.theme.isDarkMode ? 'rgb(255 255 255 / 2%)' : 'rgb(0 0 0 / 2%)'};
 
   .tools {
     display: flex;

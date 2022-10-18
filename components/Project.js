@@ -31,14 +31,16 @@ const ProjectStyled = styled.div`
       justify-content: flex-start;
     }
 
-    --icon-opacity: 0.1;
+    --icon-opacity: 0.6;
     --icon-x: 0.1em;
 
     .title-content {
+      cursor: pointer;
       &:hover,
       &:focus {
         --icon-opacity: 1;
-        --icon-x: 0.2em;
+        --icon-x: 0.15em;
+        --text-decoration: underline;
       }
 
       > h2 {
@@ -47,16 +49,18 @@ const ProjectStyled = styled.div`
         font-style: italic;
       }
 
-      > a {
+      > div {
         display: flex;
         margin-left: 0.1em;
+        text-decoration: var(--text-decoration);
 
         img {
-          filter: brightness(0) invert(1);
+          filter: ${(props) =>
+            props.theme.isDarkMode ? 'brightness(0) invert(1)' : ''};
           margin-top: 0.05em !important;
           opacity: var(--icon-opacity);
           transform: translateX(var(--icon-x));
-          transition: 0.1s;
+          transition: transform 0.1s, opacity 0.1s, filter 0.2s;
         }
       }
     }
@@ -110,14 +114,16 @@ const ProjectStyled = styled.div`
       border: 0;
       border-radius: 0.5em;
       transition: box-shadow 0.2s;
+      --box-shadow-color: ${(props) =>
+        props.theme.isDarkMode ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 15%)'};
 
       &:focus,
       &:hover {
-        box-shadow: 0 0 0 1px #ffffff3b;
+        box-shadow: 0 0 0 1px var(--box-shadow-color);
       }
 
       &.selected {
-        box-shadow: 0 0 0 3px #ffffff3b;
+        box-shadow: 0 0 0 3px var(--box-shadow-color);
       }
 
       img {
@@ -126,7 +132,7 @@ const ProjectStyled = styled.div`
     }
 
     .control-arrow {
-      background: rgba(0, 0, 0, 0.05);
+      background: rgba(0, 0, 0, 0.2);
       height: 1.5em;
       width: 1.5em;
       margin: auto 0.4em;
@@ -146,27 +152,30 @@ const ProjectStyled = styled.div`
 
 export default function Project({ projectData, isClickable }) {
   const { id, name, tools, tasks, images } = projectData
-  const router = useRouter()
-
-  const handleClick = () => isClickable && router.push(id)
-
+  // const router = useRouter()
+  // const handleClick = () => isClickable && router.push(id)
   return (
     <ProjectStyled>
       <div className="title">
-        <button className="title-content" onClick={handleClick}>
+        <a
+          className="title-content"
+          // onClick={handleClick}
+          href={projectData.demoLink}
+          target="__blank"
+        >
           <h2>{name}</h2>
-          {isClickable && (
-            <a>
-              <span>project page</span>
-              <Image
-                src="/images/general/east.svg"
-                alt="right arrow"
-                height="20"
-                width="20"
-              />
-            </a>
-          )}
-        </button>
+          {/* {isClickable && ( */}
+          <div>
+            <span>view demo</span>
+            <Image
+              src="/images/general/east.svg"
+              alt="right arrow"
+              height="20"
+              width="20"
+            />
+          </div>
+          {/* )} */}
+        </a>
       </div>
 
       <div className="tools">

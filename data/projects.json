@@ -42,7 +42,8 @@
       "/images/projects/lm-2.jpg",
       "/images/projects/lm-3.jpg",
       "/images/projects/lm-4.jpg"
-    ]
+    ],
+    "demoLink": "https://lesson-management.omercohen.dev"
   },
   {
     "id": "soldiers-test",
@@ -75,7 +76,8 @@
       "/images/projects/st-2.jpg",
       "/images/projects/st-3.jpg",
       "/images/projects/st-4.jpg"
-    ]
+    ],
+    "demoLink": "https://madorpele.gitlab.io/soldiers-test"
   },
   {
     "id": "graphonet",
@@ -104,6 +106,7 @@
       "/images/projects/gn-2.jpg",
       "/images/projects/gn-3.jpg",
       "/images/projects/gn-4.jpg"
-    ]
+    ],
+    "demoLink": "https://madorpele.gitlab.io/calendar"
   }
 ]

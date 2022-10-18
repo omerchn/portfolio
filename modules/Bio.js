@@ -1,12 +1,15 @@
 import Image from 'next/image'
 import styled from 'styled-components'
 
+// components
+import ThemeToggle from 'components/ThemeToggle'
+
 // styles
 const BioStyled = styled.div`
   width: 100%;
   max-width: 100%;
   padding: 2em;
-  border-radius: 1em;
+  padding-top: 0em;
   background-image: url('images/general/waves-background.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -19,13 +22,8 @@ const BioStyled = styled.div`
       cursor: pointer;
       margin: 0 0.5em;
       transition: filter 0.2s;
-
-      &.linkedin {
-        filter: grayscale(1);
-      }
-      &.github {
-        filter: brightness(0) invert(1);
-      }
+      filter: ${(props) =>
+        props.theme.isDarkMode ? 'invert(1)' : 'invert(0)'};
     }
   }
 
@@ -36,7 +34,11 @@ const BioStyled = styled.div`
     border-radius: 0.5em;
     overflow: hidden;
     margin-top: 2em;
-    box-shadow: 0 0 0 6px #ffffff3b;
+    transition: box-shadow 0.2s;
+    box-shadow: ${(props) =>
+      props.theme.isDarkMode
+        ? '0 0 0 6px rgb(255 255 255 / 25%)'
+        : '0 0 0 6px rgb(0 0 0 / 10%)'};
   }
 
   .job {
@@ -50,9 +52,10 @@ const BioStyled = styled.div`
   }
 `
 
-export default function Bio() {
+export default function Bio({ isDarkModeState }) {
   return (
     <BioStyled>
+      <ThemeToggle isDarkModeState={isDarkModeState} />
       <div className="socials">
         <a
           target="__blank"

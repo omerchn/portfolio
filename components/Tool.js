@@ -11,10 +11,14 @@ const ToolStyled = styled.div`
   width: ${(props) => props.size || 'unset'};
   height: ${(props) => props.size || 'unset'};
 
+  &.white,
+  &.white .tooltip {
+    filter: ${(props) => (props.theme.isDarkMode ? 'invert(0)' : 'invert(1)')};
+  }
+
   &:hover,
   &:focus-within {
     z-index: 1;
-    filter: brightness(1.1);
 
     .tooltip {
       pointer-events: inherit;
@@ -39,7 +43,7 @@ const ToolStyled = styled.div`
     color: #000;
     font-weight: bold;
     border: 1px solid #999;
-    transition: opacity 0.2s, transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s, filter 0.2s;
 
     &:hover {
       text-decoration: underline;
@@ -58,7 +62,11 @@ export default function Tool({ toolData, size, withTooltip }) {
   const { name, imageSrc, link } = toolData
 
   return (
-    <ToolStyled size={size} title={!withTooltip ? name : ''}>
+    <ToolStyled
+      size={size}
+      title={!withTooltip ? name : ''}
+      className={`${toolData.white ? 'white' : ''}`}
+    >
       <Image src={imageSrc} height="30" width="30" alt={name} />
       {withTooltip && (
         <a className="tooltip" target="__blank" href={link}>

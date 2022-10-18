@@ -21,7 +21,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-body {
+body.dark-mode {
   background-color: rgb(15 23 42);
   color: #fff;
 }
@@ -59,12 +59,18 @@ ul {
   font-style: italic;
 }
 
+.dark-mode [data-tooltip] {
+  filter: invert(1);
+}
+
 [data-tooltip] {
   position: relative;
   overflow: visible !important;
+  z-index: 1;
 }
 
 [data-tooltip]::after {
+  white-space: nowrap;
   content: attr(data-tooltip);
   top: 100%;
   transform: translate(-50%, 40%);
@@ -84,7 +90,13 @@ ul {
   z-index: 1;
 }
 
-[data-tooltip]:hover::after, [data-tooltip]:focus::after {
+[data-tooltip]:hover::after, [data-tooltip]:focus-visible::after {
   transform: translate(-50%, 20%);
   opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  [data-tooltip]::after {
+    display: none;
+  }
 }

@@ -12,7 +12,8 @@
   {
     "name": "Express",
     "imageSrc": "/images/icons/express-icon.svg",
-    "link": "https://expressjs.com/"
+    "link": "https://expressjs.com/",
+    "white": true
   },
   {
     "name": "MongoDB",
@@ -42,7 +43,8 @@
   {
     "name": "Next.js",
     "imageSrc": "/images/icons/next-icon.svg",
-    "link": "https://nextjs.org/"
+    "link": "https://nextjs.org/",
+    "white": true
   },
   {
     "name": "Git",
