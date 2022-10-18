@@ -21,9 +21,14 @@ const BioStyled = styled.div`
     a {
       cursor: pointer;
       margin: 0 0.5em;
-      transition: filter 0.2s;
+      transition: filter 0.2s, opacity 0.2s;
       filter: ${(props) =>
         props.theme.isDarkMode ? 'invert(1)' : 'invert(0)'};
+      opacity: ${(props) => (props.theme.isDarkMode ? '.75' : '.5')};
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 

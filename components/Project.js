@@ -115,11 +115,11 @@ const ProjectStyled = styled.div`
       border-radius: 0.5em;
       transition: box-shadow 0.2s;
       --box-shadow-color: ${(props) =>
-        props.theme.isDarkMode ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 15%)'};
+        props.theme.isDarkMode ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 25%)'};
 
       &:focus,
       &:hover {
-        box-shadow: 0 0 0 1px var(--box-shadow-color);
+        box-shadow: 0 0 0 2px var(--box-shadow-color);
       }
 
       &.selected {
