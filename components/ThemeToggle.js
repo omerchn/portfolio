@@ -5,9 +5,15 @@ const ThemeToggleStyled = styled.div`
   padding: 1em 0;
 
   > button {
-    transition: filter 0.2s;
+    transition: filter 0.2s, opacity 0.2s;
     filter: ${(props) =>
       props.theme.isDarkMode ? 'brightness(0) invert(1)' : ''};
+    opacity: 0.5;
+    opacity: ${(props) => (props.theme.isDarkMode ? '.5' : '.25')};
+
+    &:hover {
+      opacity: 1;
+    }
   }
 `
 

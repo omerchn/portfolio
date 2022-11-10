@@ -98,6 +98,9 @@ const ProjectStyled = styled.div`
 
     .slider-wrapper {
       border-radius: 0.5em;
+      --box-shadow-color: ${(props) =>
+        props.theme.isDarkMode ? '#000' : '#ccc'};
+      box-shadow: 0 0.1em 0.2em var(--box-shadow-color);
     }
 
     .thumbs-wrapper {
@@ -115,11 +118,11 @@ const ProjectStyled = styled.div`
       border-radius: 0.5em;
       transition: box-shadow 0.2s;
       --box-shadow-color: ${(props) =>
-        props.theme.isDarkMode ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 15%)'};
+        props.theme.isDarkMode ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 25%)'};
 
       &:focus,
       &:hover {
-        box-shadow: 0 0 0 1px var(--box-shadow-color);
+        box-shadow: 0 0 0 2px var(--box-shadow-color);
       }
 
       &.selected {
@@ -200,6 +203,8 @@ export default function Project({ projectData, isClickable }) {
         className="images-carousel"
         showStatus={false}
         showIndicators={false}
+        showArrows={false}
+        swipeable={false}
       >
         {images.map((image) => (
           <div key={image} style={{ width: 'fit-content' }}>
