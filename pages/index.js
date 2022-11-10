@@ -32,7 +32,7 @@ const MainStyled = styled.div`
 `
 
 export default function Main() {
-  const [isDarkMode, setIsDarkMode] = useLocalStorage('isDarkMode', false)
+  const [isDarkMode, setIsDarkMode] = useLocalStorage('isDarkMode', true)
   useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add('dark-mode')
