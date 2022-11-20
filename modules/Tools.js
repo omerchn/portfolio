@@ -14,8 +14,28 @@ const ToolsStyled = styled.div`
   padding: 1em 2em;
   padding-top: 1px;
   border-radius: 1em;
-  background: ${(props) =>
-    props.theme.isDarkMode ? 'rgb(255 255 255 / 2%)' : 'rgb(0 0 0 / 2%)'};
+  transition: box-shadow 0.2s;
+
+  ${(props) =>
+    props.theme.isDarkMode
+      ? `
+        --dotColor: #414141;
+        background: linear-gradient(360deg,#141C2E 21px,transparent 1%) 50%,linear-gradient(#141C2E 21px,transparent 1%) 50%,var(--dotColor);
+        background-size: 22px 22px;
+        box-shadow: 0 0 0 6px rgb(255 255 255 / 10%);
+        &:hover {
+          box-shadow: 0 0 0 12px rgb(255 255 255 / 10%);
+        }
+      `
+      : `
+        --dotColor: #d1d1d1;
+        background: linear-gradient(360deg,#fafafa 21px,transparent 1%) 50%,linear-gradient(#fafafa 21px,transparent 1%) 50%,var(--dotColor);
+        background-size: 22px 22px;
+        box-shadow: 0 0 0 6px rgb(0 0 0 / 5%);
+        &:hover {
+          box-shadow: 0 0 0 12px rgb(0 0 0 / 5%);
+        }
+      `};
 
   .tools {
     display: flex;

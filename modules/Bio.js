@@ -10,10 +10,19 @@ const BioStyled = styled.div`
   max-width: 100%;
   padding: 2em;
   padding-top: 0em;
-  background-image: url('images/general/waves-background.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+
+  ${(props) =>
+    props.theme.isDarkMode
+      ? `
+        --dotColor: #414141;
+        background: linear-gradient(90deg,#141C2E 21px,transparent 1%) 50%,linear-gradient(#141C2E 21px,transparent 1%) 50%,var(--dotColor);
+        background-size: 22px 22px;
+      `
+      : `
+        --dotColor: #bfbfbf;
+        background: linear-gradient(90deg,#fafafa 21px,transparent 1%) 50%,linear-gradient(#fafafa 21px,transparent 1%) 50%,var(--dotColor);
+        background-size: 22px 22px;
+      `};
 
   .socials {
     margin: 1em 0;
@@ -44,6 +53,13 @@ const BioStyled = styled.div`
       props.theme.isDarkMode
         ? '0 0 0 6px rgb(255 255 255 / 25%)'
         : '0 0 0 6px rgb(0 0 0 / 10%)'};
+
+    &:hover {
+      box-shadow: ${(props) =>
+        props.theme.isDarkMode
+          ? '0 0 0 12px rgb(255 255 255 / 25%)'
+          : '0 0 0 12px rgb(0 0 0 / 10%)'};
+    }
   }
 
   .job {

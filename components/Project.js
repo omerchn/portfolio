@@ -98,9 +98,17 @@ const ProjectStyled = styled.div`
 
     .slider-wrapper {
       border-radius: 0.5em;
-      --box-shadow-color: ${(props) =>
-        props.theme.isDarkMode ? '#000' : '#ccc'};
-      box-shadow: 0 0.1em 0.2em var(--box-shadow-color);
+      transition: box-shadow 0.2s;
+      box-shadow: ${(props) =>
+        props.theme.isDarkMode
+          ? '0 0 0 6px rgb(255 255 255 / 25%)'
+          : '0 0 0 6px rgb(0 0 0 / 10%)'};
+      &:hover {
+        box-shadow: ${(props) =>
+          props.theme.isDarkMode
+            ? '0 0 0 12px rgb(255 255 255 / 25%)'
+            : '0 0 0 12px rgb(0 0 0 / 10%)'};
+      }
     }
 
     .thumbs-wrapper {
@@ -118,15 +126,19 @@ const ProjectStyled = styled.div`
       border-radius: 0.5em;
       transition: box-shadow 0.2s;
       --box-shadow-color: ${(props) =>
-        props.theme.isDarkMode ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 25%)'};
+        props.theme.isDarkMode ? 'rgb(255 255 255 / 25%)' : 'rgb(0 0 0 / 10%)'};
 
       &:focus,
       &:hover {
-        box-shadow: 0 0 0 2px var(--box-shadow-color);
+        box-shadow: 0 0 0 3px var(--box-shadow-color);
+      }
+
+      &:active {
+        box-shadow: 0 0 0 1px var(--box-shadow-color);
       }
 
       &.selected {
-        box-shadow: 0 0 0 3px var(--box-shadow-color);
+        box-shadow: 0 0 0 4px var(--box-shadow-color);
       }
 
       img {
