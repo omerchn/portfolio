@@ -98,12 +98,14 @@ const ProjectStyled = styled.div`
 
     .slider-wrapper {
       border-radius: 0.5em;
-      transition: box-shadow 0.2s;
+      opacity: 0.5;
+      transition: box-shadow 0.2s, opacity 0.5s;
       box-shadow: ${(props) =>
         props.theme.isDarkMode
           ? '0 0 0 6px rgb(255 255 255 / 25%)'
           : '0 0 0 6px rgb(0 0 0 / 10%)'};
       &:hover {
+        opacity: 1;
         box-shadow: ${(props) =>
           props.theme.isDarkMode
             ? '0 0 0 12px rgb(255 255 255 / 25%)'
@@ -124,12 +126,14 @@ const ProjectStyled = styled.div`
       margin: 0 0.2em;
       border: 0;
       border-radius: 0.5em;
-      transition: box-shadow 0.2s;
+      opacity: 0.5;
+      transition: box-shadow 0.2s, opacity 0.5s;
       --box-shadow-color: ${(props) =>
         props.theme.isDarkMode ? 'rgb(255 255 255 / 25%)' : 'rgb(0 0 0 / 10%)'};
 
       &:focus,
       &:hover {
+        opacity: 1;
         box-shadow: 0 0 0 3px var(--box-shadow-color);
       }
 
@@ -138,6 +142,7 @@ const ProjectStyled = styled.div`
       }
 
       &.selected {
+        opacity: 1;
         box-shadow: 0 0 0 4px var(--box-shadow-color);
       }
 
